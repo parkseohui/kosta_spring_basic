@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="kosta.di" />
+
+<!-- 	<bean id="oracleDao" class="kosta.di.OracleDao"></bean>
+	<bean id="mysqldao" class="kosta.di.MySQLDao"></bean>
+	<bean id="service" class="kosta.di.WriteService">
+		<constructor-arg ref="oracleDao"/>
+		<constructor-arg ref="mysqldao"/>
+		<property name="dao" ref="oracleDao" />
+		name에는 멤버변수 이름을 넣어야한다.
+	</bean> -->
+
+</beans>
+
