@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Factory {
 
-	@Bean
+/*	@Bean
 	public Dao oracleDao() {
 		return new OracleDao();
 
@@ -16,5 +16,5 @@ public class Factory {
 	public Service writeService() {
 		return new WriteService();
 
-	}
+	}*/
 }
