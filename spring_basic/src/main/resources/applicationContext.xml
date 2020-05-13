@@ -5,7 +5,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="kosta.di" />
+	<context:component-scan base-package="kosta.test" />
+	<!-- <context:component-scan base-package="kosta.di" /> -->
 
 <!-- 	<bean id="oracleDao" class="kosta.di.OracleDao"></bean>
 	<bean id="mysqldao" class="kosta.di.MySQLDao"></bean>
@@ -15,6 +16,14 @@
 		<property name="dao" ref="oracleDao" />
 		name에는 멤버변수 이름을 넣어야한다.
 	</bean> -->
-
+	
+	<!-- <bean id="calculate" class="kosta.test.Calculate"></bean>
+	<bean id="display" class="kosta.test.Display">
+	<constructor-arg ref="calculate"/>
+	</bean> -->
+	
+	
+<!-- <bean id="display" class="kosta.test.Display"/> -->
+	<!-- <constructor-arg ref="calculate"></constructor-arg> -->
 </beans>
 
